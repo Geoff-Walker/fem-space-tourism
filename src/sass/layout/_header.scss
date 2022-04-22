@@ -1,0 +1,79 @@
+@use "../abstracts/colors" as color;
+@use "../base/typography" as type;
+
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 24px;
+
+	&-logo {
+		width: 40px;
+		height: 40px;
+	}
+
+	&-menu {
+		width: 24px;
+		height: 24px;
+		z-index: 20;
+	}
+
+	&-close {
+		width: 24px;
+		height: 24px;
+		padding-right: 24px;
+		z-index: 20;
+	}
+
+	&-nav {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		width: 70%;
+		height: 100vh;
+		backdrop-filter: blur(20px);
+		transform: translatex(24px);
+		padding-left: 2rem;
+		padding-right: 4px;
+
+		&-list {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			width: 100%;
+			padding-top: 3rem;
+			// margin-left: 2rem;
+		}
+
+		&-listItem {
+			color: color.$color-white;
+			font-family: type.$font-subHeading;
+			font-size: type.$nav-text-size-1;
+			letter-spacing: type.$font-spacing-medium;
+			font-weight: 100;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			margin-top: 2rem;
+			width: 100%;
+			height: 31px;
+			padding-left: 2rem;
+
+			&-active {
+				border-right: 4px solid color.$color-white;
+				transform: translateX(4px);
+			}
+		}
+
+		&-pageNo {
+			padding-right: 14px;
+
+			font-weight: 800;
+		}
+	}
+}
+
+.mob-hidden {
+	display: none;
+}
