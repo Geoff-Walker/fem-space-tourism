@@ -37,6 +37,11 @@
 		padding-left: 2rem;
 		padding-right: 4px;
 
+		&-mobile-hide {
+			backdrop-filter: blur(0px);
+			transform: translatex(0px);
+		}
+
 		&-list {
 			display: flex;
 			flex-direction: column;
