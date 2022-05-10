@@ -7,6 +7,7 @@
 	justify-content: space-between;
 	align-items: flex-start;
 	padding: 24px;
+	z-index: 19;
 
 	&-logo {
 		width: 40px;
@@ -16,7 +17,7 @@
 	&-menu {
 		width: 24px;
 		height: 24px;
-		z-index: 20;
+		z-index: 21;
 	}
 
 	&-close {
@@ -36,10 +37,12 @@
 		transform: translatex(24px);
 		padding-left: 2rem;
 		padding-right: 4px;
+		z-index: 20;
 
 		&-mobile-hide {
 			backdrop-filter: blur(0px);
 			transform: translatex(0px);
+			width: 1rem;
 		}
 
 		&-list {
@@ -48,14 +51,13 @@
 			align-items: flex-end;
 			width: 100%;
 			padding-top: 3rem;
-			// margin-left: 2rem;
 		}
 
 		&-listItem {
-			color: color.$color-white;
 			font-family: type.$font-subHeading;
 			font-size: type.$nav-text-size-1;
 			letter-spacing: type.$font-spacing-medium;
+			color: color.$color-white;
 			font-weight: 100;
 			display: flex;
 			flex-direction: row;
@@ -65,6 +67,10 @@
 			height: 31px;
 			padding-left: 2rem;
 
+			& a {
+				color: color.$color-white;
+			}
+
 			&-active {
 				border-right: 4px solid color.$color-white;
 				transform: translateX(4px);
@@ -73,7 +79,7 @@
 
 		&-pageNo {
 			padding-right: 14px;
-
+			color: color.$color-white;
 			font-weight: 800;
 		}
 	}

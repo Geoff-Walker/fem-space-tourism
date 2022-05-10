@@ -1,7 +1,111 @@
-body {
+@use "../abstracts/colors" as color;
+@use "../base/typography" as type;
+
+.home-Body {
 	background-image: url("../../assets/images/home/background-home-mobile.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100vh;
 	width: 100%;
+	position: relative;
+	overflow-y: hidden;
+}
+
+.home-Main {
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+	top: 4rem;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	overflow-y: hidden;
+}
+
+.home-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	padding-bottom: 6rem;
+	padding-top: 2rem;
+
+	&-detail {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		min-height: 40vh;
+		width: 100%;
+	}
+
+	&-text {
+		color: color.$color-light-blue;
+		font-family: type.$font-subHeading;
+		text-align: center;
+		font-size: type.$subheading-size-3;
+		padding-left: 2rem;
+		padding-right: 2rem;
+		line-height: 25px;
+		letter-spacing: type.$font-spacing-xxSmall;
+	}
+
+	&-heading-upper {
+		color: color.$color-light-blue;
+		font-family: type.$font-subHeading;
+		font-size: type.$subheading-size-2;
+		text-transform: uppercase;
+		letter-spacing: type.$font-spacing-medium;
+		line-height: auto;
+		font-weight: 100;
+	}
+
+	&-heading-main {
+		color: color.$color-white;
+		font-family: type.$font-heading;
+		font-size: type.$heading-size-3;
+		text-decoration: none;
+		padding: 2rem;
+		font-weight: 100;
+	}
+
+	&-explore {
+		color: color.$color-dark-blue;
+		font-family: type.$font-heading;
+		font-size: type.$heading-size-7;
+		letter-spacing: type.$font-spacing-exSmall;
+		width: 150px;
+		height: 150px;
+		background-color: color.$color-white;
+		margin-top: 4rem;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&-mobile {
+			color: color.$color-dark-blue;
+			font-family: type.$font-heading;
+			font-size: type.$heading-size-7;
+			letter-spacing: type.$font-spacing-exSmall;
+			width: 150px;
+			height: 150px;
+			background-color: color.$color-white;
+			margin-top: 4rem;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			cursor: pointer;
+		}
+	}
+}
+
+.not-mobile {
+	display: none;
 }

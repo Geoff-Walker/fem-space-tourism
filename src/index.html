@@ -10,38 +10,41 @@
   
   <title>Frontend Mentor | Space tourism website</title>
 </head>
-<body>
+<body class="home-Body">
 <header class="header">
   <img class="header-logo" src="assets/images/shared/logo.svg" alt="Logo">
 
   
-  <nav class="header-nav">
-    <img class="header-menu mobile-only mob-hidden" src="assets/images/shared/icon-hamburger.svg" alt="Menu">
-    <img class="header-close mobile-only" src="assets/images/shared/icon-close.svg" alt="Menu">
-    <ul class="header-nav-list">
-      <li class="header-nav-listItem header-nav-listItem-active"><p class="header-nav-pageNo">00  </p>HOME</li>
-      <li class="header-nav-listItem"><p class="header-nav-pageNo">01  </p>DESTINATION</li>
-      <li class="header-nav-listItem"><p class="header-nav-pageNo">02  </p>CREW</li>
-      <li class="header-nav-listItem"><p class="header-nav-pageNo">03  </p>TECHNOLOGY</li>
+  <nav class="header-nav header-nav-mobile-hide">
+    <img class="header-menu mobile-only" src="assets/images/shared/icon-hamburger.svg" alt="Menu">
+    <img class="header-close mobile-only mob-hidden" src="assets/images/shared/icon-close.svg" alt="Menu">
+    <ul class="header-nav-list mob-hidden">
+      <li class="header-nav-listItem header-nav-listItem-active"><p class="header-nav-pageNo">00  </p><a href="index.html" class="">HOME</a> </li>
+      <li class="header-nav-listItem "><p class="header-nav-pageNo">01  </p><a href="destination-moon.html" class="">DESTINATION</a> </li>
+      <li class="header-nav-listItem"><p class="header-nav-pageNo">02  </p><a href="crew-commander.html" class="">CREW</a></li>
+      <li class="header-nav-listItem"><p class="header-nav-pageNo">03  </p><a href="technology-vehicle.html" class="">TECHNOLOGY</a></li>
     </ul>
   </nav>
 
 </header>
-<main>
+<main class="home-Main">
 
   <div class="home-container">
     <div class="home-container-detail">
 
-      So, you want to travel to
-      Space
-      Let’s face it; if you want to go to space, you might as well genuinely go to 
-      outer space and not hover kind of on the edge of it. Well sit back, and relax 
-      because we’ll give you a truly out of this world experience!
+      <h1 class="home-container-heading-upper">So, you want to travel to</h1>
+      <h2 class="home-container-heading-main">SPACE</h2>
+     <p class="home-container-text">Let’s face it; if you want to go to space, you might as well genuinely go to 
+       outer space and not hover kind of on the edge of it. Well sit back, and relax 
+       because we’ll give you a truly out of this world experience!</p>   
     </div>
-    <div class="home-container-explore">
+    <div class="home-container-explore-mobile">
+      <p>EXPLORE</p>  
+    </div>
+    <div class="home-container-explore not-mobile">
+      <p>EXPLORE</p>  
+    </div>
 
-      Explore
-    </div>
   </div>
 </main>  
 
