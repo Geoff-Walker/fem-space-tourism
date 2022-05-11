@@ -6,23 +6,64 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Barlow&family=Bellefair&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <script defer src="script.js"></script>
   
-  <title>Frontend Mentor | Space tourism website</title>
+  <title>Frontend Mentor | Crew - Engineer </title>
 </head>
+<body class="crew-Body">
+<header class="header">
+  <img class="header-logo" src="assets/images/shared/logo.svg" alt="Logo">
+
+  
+  <nav class="header-nav header-nav-mobile-hide">
+    <img class="header-menu mobile-only" src="assets/images/shared/icon-hamburger.svg" alt="Menu">
+    <img class="header-close mobile-only mob-hidden" src="assets/images/shared/icon-close.svg" alt="Menu">
+    <ul class="header-nav-list mob-hidden">
+      <li class="header-nav-listItem "><p class="header-nav-pageNo">00  </p><a href="index.html" class="">HOME</a> </li>
+      <li class="header-nav-listItem "><p class="header-nav-pageNo">01  </p><a href="destination-moon.html" class="">DESTINATION</a> </li>
+      <li class="header-nav-listItem header-nav-listItem-active"><p class="header-nav-pageNo">02  </p><a href="crew-commander.html" class="">CREW</a></li>
+      <li class="header-nav-listItem"><p class="header-nav-pageNo">03  </p><a href="technology-vehicle.html" class="">TECHNOLOGY</a></li>
+    </ul>
+  </nav>
+
+</header>
 <body>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+  <main class="crew-Main">
 
-  02 Meet your crew
+    <div class="crew-container">
+      <div class="crew-container-image">
+        <div class="crew-para">
+          <p class="crew-paraNumber">02</p> <h1 class="crew-paraTitle">Meet your crew</h1>  
+        </div>
+        <img src="assets/images/crew/image-anousheh-ansari.webp" class="crew-image" alt="Douglas Hurley">
+      </div>
+      
+      <div class="crew-container-detail">
+  
+        <div class="crew_members-container">
+          <a href="crew-commander.html" class="crew_member-container "></a>
+          <a href="crew-specialist.html" class="crew_member-container"></a>
+          <a href="crew-pilot.html" class="crew_member-container"></a>
+          <a href="crew-engineer.html" class="crew_member-container crew_member-container-active"></a>
+        </div>
+        
+      </div>
+      <div class="crew-container-title">
+        <h1 class="crew-container-rank">Flight Engineer</h1>    
+        <h2 class="crew-container-name">Anousheh Ansari</h2>  
+      </div>
+      
+      <p class="crew-container-para">
+        Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. 
+        Ansari was the fourth self-funded space tourist, the first self-funded woman to 
+        fly to the ISS, and the first Iranian in space.
+      </p>
+    </div>
+  </main>
 
-  Flight Engineer
-  Anousheh Ansari
 
-  Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. 
-  Ansari was the fourth self-funded space tourist, the first self-funded woman to 
-  fly to the ISS, and the first Iranian in space. 
+
+
 </body>
 </html>

@@ -1,25 +1,128 @@
 @use "../abstracts/colors" as color;
 @use "../base/typography" as type;
 
-.crew-Body {
-	background-image: url("../../assets/images/destination/background-destination-mobile.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 100vh;
-	width: 100%;
-	position: relative;
-	overflow-y: hidden;
-}
+.crew {
+	&-Body {
+		background-image: url("../../assets/images/crew/background-crew-mobile.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 100vh;
+		width: 100%;
+		position: relative;
+		overflow-y: hidden;
+	}
 
-.crew-Main {
-	height: 100vh;
-	width: 100%;
-	position: absolute;
-	top: 4rem;
-	left: 0;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	overflow-y: hidden;
+	&-Main {
+		min-height: 100vh;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	&-image {
+		height: 327px;
+		// width: 223px;
+	}
+
+	&-para {
+		display: flex;
+		flex-direction: row;
+		padding-bottom: 2rem;
+	}
+
+	&-paraNumber {
+		font-family: type.$font-subHeading;
+		color: color.$color-white;
+		opacity: 0.25;
+		font-size: type.$subheading-size-2;
+		font-weight: 400;
+		letter-spacing: type.$font-spacing-medium;
+	}
+
+	&-paraTitle {
+		font-family: type.$font-subHeading;
+		color: color.$color-white;
+		font-size: type.$subheading-size-2;
+		letter-spacing: type.$font-spacing-medium;
+		font-weight: 100;
+		text-transform: uppercase;
+		padding-left: 1rem;
+	}
+
+	&_members {
+		&-container {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			width: 88px;
+		}
+	}
+
+	&_member {
+		&-container {
+			height: 10px;
+			width: 10px;
+			background-color: #979797;
+			border-radius: 50%;
+
+			&-active {
+				background-color: color.$color-white;
+			}
+		}
+	}
+
+	&-container {
+		height: 95vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		padding-top: 5rem;
+
+		&-title {
+			text-align: center;
+		}
+
+		&-image {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 90%;
+			border-bottom: 1px solid #979797;
+		}
+
+		&-rank {
+			font-family: type.$font-heading;
+			color: color.$color-white;
+			font-size: type.$subheading-size-2;
+			letter-spacing: type.$font-spacing-exSmall;
+			text-transform: uppercase;
+			font-weight: 100;
+			opacity: 50%;
+			padding-bottom: 0.25rem;
+		}
+
+		&-name {
+			font-family: type.$font-heading;
+			color: color.$color-white;
+			font-size: type.$heading-size-8;
+			letter-spacing: type.$font-spacing-exSmall;
+			text-transform: uppercase;
+			font-weight: 100;
+		}
+
+		&-para {
+			font-family: type.$font-subHeading;
+			color: color.$color-light-blue;
+			font-size: type.$subheading-size-3;
+			letter-spacing: type.$font-spacing-exSmall;
+			padding-left: 1.5rem;
+			padding-right: 1.5rem;
+			padding-bottom: 3.5rem;
+			text-align: center;
+			line-height: 25px;
+		}
+	}
 }
