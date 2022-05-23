@@ -122,20 +122,21 @@
 		&-Body {
 			background-image: url("../../assets/images/home/background-home-tablet.jpg");
 			overflow-y: scroll;
-			min-height: 100vh;
+			height: 100%;
 		}
 		&-Main {
-			min-height: 100vh;
+			min-height: 100%;
 			width: 100%;
 			position: absolute;
 			top: 0;
 			left: 0;
-			overflow-y: scroll;
+			overflow-y: visible;
 		}
 
 		&-container {
 			padding-top: 8rem;
 			width: 450px;
+			min-height: 50rem;
 
 			&-text {
 				font-size: type.$subheading-size-2;
@@ -154,8 +155,9 @@
 
 			&-explore {
 				display: flex;
-				width: 242px;
-				height: 242px;
+				min-width: 242px;
+				min-height: 242px;
+				border-radius: 50%;
 				letter-spacing: type.$font-spacing-small;
 
 				& :hover {
